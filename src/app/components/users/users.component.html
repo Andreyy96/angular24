@@ -1,0 +1,3 @@
+<!--<app-user-datails *ngIf="userDetails" [userDetails]="userDetails"></app-user-datails>-->
+<app-user *ngFor="let user of users" [user]="user" (lift)="getUserEvent($event)"></app-user>
+<app-posts *ngIf="userPosts" [userPosts]="userPosts"></app-posts>
