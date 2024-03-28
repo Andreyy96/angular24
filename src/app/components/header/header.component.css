@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  font-size: 25px;
+  height: 50px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: snow;
+}
+
+.container a[class='active'] {
+  color: red;
+}
