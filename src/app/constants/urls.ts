@@ -12,7 +12,7 @@ const urls = {
   },
   posts: {
     link: posts,
-    byId: (id: number): string => `${posts}/${id}`
+    byIdComments: (id: number): string => `${posts}/${id}/comments`
   }
 }
 
