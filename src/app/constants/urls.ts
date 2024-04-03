@@ -2,15 +2,18 @@ import {environment} from "../../environments/environment";
 
 const {API} = environment
 
-const cars = `${API}/cars`
+const users = `${API}/users`
+const posts =  `${API}/posts`
 
 const urls = {
-  cars: {
-    link: cars,
-    byId: (id: number):string => `${cars}/${id}`
+  users: {
+    link: users,
+    byId: (id: number): string => `${users}/${id}`
+  },
+  posts: {
+    link: posts,
+    byId: (id: number): string => `${posts}/${id}`
   }
 }
 
-export {
-  urls
-}
+export {urls}

@@ -1,5 +1,5 @@
 import {IEnvironment} from "./environment.interface";
 
 export const environment: IEnvironment = {
-  API: "http://owu.linkpc.net/carsAPI/v1"
+  API: 'https://jsonplaceholder.typicode.com'
 };
