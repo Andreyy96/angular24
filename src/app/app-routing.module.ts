@@ -4,8 +4,9 @@ import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
 
 const routes: Routes = [
   {path: '', component: MainLayoutComponent, children: [
-      {path: "users", loadChildren: () => import("./modules/users/users.module").then(m=>m.UsersModule)},
-      {path: "posts", loadChildren: () => import("./modules/posts/posts.module").then(m=>m.PostsModule)}
+      {path: '', redirectTo: 'cars', pathMatch: 'full'},
+      {path: "auth", loadChildren: () => import("./modules/auth/auth.module").then(m=>m.AuthModule)},
+      {path: "cars", loadChildren: () => import("./modules/cars/cars.module").then(m=>m.CarsModule)}
     ]}
 ];
 

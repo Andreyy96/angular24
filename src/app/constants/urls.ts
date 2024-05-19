@@ -1,19 +1,25 @@
 import {environment} from "../../environments/environment";
 
-const {API} = environment
+const {API} = environment;
 
+const cars = `${API}/cars`
+const auth = `${API}/auth`
 const users = `${API}/users`
-const posts =  `${API}/posts`
 
 const urls = {
-  users: {
-    link: users,
-    byId: (id: number): string => `${users}/${id}`
+  cars: {
+    base: cars,
+    byId: (id: number): string => `${cars}/${id}`
   },
-  posts: {
-    link: posts,
-    byIdComments: (id: number): string => `${posts}/${id}/comments`
+  auth: {
+    login: auth,
+    refresh: `${auth}/refresh`,
+    register: users,
+    me: `${auth}/me`
+
   }
 }
 
-export {urls}
+export {
+  urls
+}
